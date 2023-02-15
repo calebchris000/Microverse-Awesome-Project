@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.cdnfonts.com/css/comic-sans" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/tellural" rel="stylesheet">
+                
+            
     <title>Awesome Books</title>
 
 </head>
@@ -15,9 +17,9 @@
     <nav class="navbar">
         <h1 class="title-header">Awesome books</h1>
         <ul class="navigation-items">
-            <li class="item a" id="list">List</li>
-            <li class="item b" id="addNew">Add new</li>
-            <li class="item c" id="contact">Contact</li>
+            <li class="item a">List</li>
+            <li class="item b">Add new</li>
+            <li class="item c">Contact</li>
         </ul>
     </nav>
 
@@ -25,27 +27,11 @@
 
         <div class="date"></div>
 
-        <div id="bookshelf">
-            <h1 class="heading">All awesome Books</h1>
-        <div class="bookshelf">
-            
+        <h1 class="heading">All awesome Books</h1>
+        <div class="bookshelf" id="bookshelf">
         </div>
-    </div>
-        <div class="contact-section" id="contact-section">
-            <h1 class="heading">Contact information</h1>
-            <div class="content">
-<div class="contact-text"><p>Do have any questions or you just want to say "Hello"? <br> you can reach out to us!</p></div>
-<div >
-    <ul class="contact-info">
-        <li>Our e-mail:mail@mail.com</li>
-        <li>Our phone number:0043586534422</li>
-        <li>Our address:Street22,84503 City,Country</li>
-    </ul>
-</div>
-        </div>
-    </div>
-        <form action="" method="post" id="form">
-            <h1 class="heading">Add a New Book</h1>
+    
+        <form action="" method="post">
             <label for="Title">
                 <input type="text" name="title" id="title" placeholder="Title" required>
             </label>
@@ -60,14 +46,18 @@
     
             </label>
         </form>
+        <div class="contact">
+           
+        </div>
     </section>
    
-    <section class="copyright">
+    <footer class="copyright">
        <p>Copyright</p>
-    </section>
+    </footer>
 
     <script src="./app.js"></script>
     <script src="./date.js"></script>
+    <script src="./spa.js"></script>
 
 </body>
 
