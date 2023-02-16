@@ -22,7 +22,7 @@ function countTime() {
   let day = newDate.getDay();
   let year = newDate.getFullYear();
   let time = `${newDate.getHours()}:${newDate.getMinutes()}:${newDate.getSeconds()}`;
-  dateWrapper.innerHTML = `${monthNames[month]} ${day *4} ${year}, ${time}`;
+  dateWrapper.innerHTML = `${monthNames[month]} ${day +12} ${year}, ${time}`;
 }
 
 setInterval(countTime, 1000);
