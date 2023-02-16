@@ -96,4 +96,29 @@ contact.innerHTML = `
     <li>Our address: 742 Maple Street, Springfield</li>
 </ul>`;
 
-removeItem();
+function restore() {
+  newBook.books = []
+  let data = JSON.parse(localStorage.getItem('data'));
+
+  data.forEach(function(item) {
+    newBook.books.push(item)
+  })
+  let items = ''
+
+  newBook.books.forEach((item, index) => {
+    items+= `
+    <div class="coll${index} collection">
+    <div class='bookinfo'>
+    <p class='title'>${item.title} by</p>
+    <p class='author'>${item.author}</p>
+    </div>
+    <button class='remove' onclick="removeItem(${index})">remove</button>
+    </div>`;
+  })
+
+  bookCollection.innerHTML = items;
+}
+
+window.onload = restore()
+
+// removeItem();
